@@ -1,0 +1,27 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="play-container">
+        <h1>Christmas Guest List</h1>
+        <button id="play-btn" class="play-btn">Play Jingle!</button>
+        </div>
+        <ul class="guest-list" id="guest-list">    
+        </ul>
+      
+        <form onkeydown="return event.key != 'Enter';">
+        <label for="name">New guest or Remove guest?</label>
+        <input id="input" type="text" id="name" name="name">
+        <button id="btn" type="button">Add 'em</button>
+        <button id="rm-btn" class="btn" type="button">Remove 'em</button>
+        </form>
+        <div class="note">
+        <p class="note">-- Leave input field blank to remove last item in the list.</p>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

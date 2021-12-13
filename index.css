@@ -1,0 +1,135 @@
+:root {
+  --wine-red: #C7375F;
+  --bright-red: #D42D2F;
+  --dark-green: #344D2F;
+  --light-green: #77A047;
+  --gold: #FAC57D;
+  --snow: #F0F4F7;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    color: var(--snow);
+    background: url(img/xmasy.jpg);
+    background-size: cover;
+    font-family: 'Mountains of Christmas', cursive;
+}
+
+h1 { 
+    margin: 0;
+    font-size: 60px;
+    text-shadow: 2px 2px 1px var(--bright-red);
+}
+
+form *:not(label),
+.guest-list {
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 10em;
+    justify-content: space-around;
+}
+
+
+form * {
+   padding: .5em;
+   font-size: 1.3rem
+}
+
+label {
+    padding: 0;
+    text-shadow: 2px 2px 1px var(--bright-red);
+    font-size: 30px;
+
+}
+
+input { 
+    background: var(--snow);
+    margin-top: 10px;
+    
+}
+input:focus {
+    outline: none;
+    box-shadow: 2px 2px 20px var(--bright-red);
+    border: 1px dashed var(--bright-red);
+}
+
+.guest-list {
+    color: var(--snow);
+    text-shadow: 2px 2px 1px var(--bright-red);
+    font-size: 30px;
+    min-width: 350px;
+    max-width: 5ch;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: rgba(25,25,25, 0.5);
+    padding: 1em 2em;
+}
+
+li {
+    padding: 0.25em;
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    list-style: square;
+}
+
+button {
+    background: var(--dark-green);
+    color: var(--snow);
+    transition: all .2s ease-in-out;
+    margin: 4px 0 0;
+    
+}
+
+button:hover,
+button:focus {
+    transform: translateY(-5px);
+    cursor: pointer;
+    outline: none;
+}
+.btn {
+    background: var(--bright-red);
+}
+.play-container {
+    position: relative;
+}
+.play-btn {
+    padding: 10px;
+    border: none;
+    background: var(--snow);
+    color: var(--bright-red);
+    box-shadow: 2px 2px 20px var(--bright-red);
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    position: absolute;
+    top: -60%;
+    left: 8%;
+    transform: rotate(45deg)
+   
+}
+.play-btn:hover,
+.play-btn:focus {
+    background: var(--bright-red);
+    color: var(--snow);
+    box-shadow: 2px 2px 20px var(--snow);
+    transform: rotate(45deg);
+    outline: none;    
+}
+.note {
+    background: var(--dark-green);
+}
